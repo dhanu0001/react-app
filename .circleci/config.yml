@@ -42,4 +42,4 @@ workflows:
               only: master
       - status
           requires:
-            - name: "heroku/deploy-via-git"
+            - heroku/deploy-via-git
