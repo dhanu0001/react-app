@@ -20,7 +20,7 @@ jobs:
           command: npm run build
   status:
     docker:
-      - image: 'cimg/base:stable'
+      - image: cimg/base:stable
     steps:
       - run: echo "Sending status"
       - slack/notify:
@@ -41,4 +41,4 @@ workflows:
             branches:
               only: master
       - status
-          requires: "heroku/deploy-via-git"
+          requires: heroku/deploy-via-git
