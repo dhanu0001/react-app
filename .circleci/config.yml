@@ -22,7 +22,7 @@ jobs:
     docker:
       - image: 'cimg/base:stable'
     requires:
-      - heroku/deploy-via-git
+      - "heroku/deploy-via-git"
     steps:
       - run: echo "Sending status"
       - slack/notify:
