@@ -41,5 +41,4 @@ workflows:
             branches:
               only: master
       - status
-          requires:
-            - heroku/deploy-via-git
+          requires: *deploy-via-git
