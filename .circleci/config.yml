@@ -21,8 +21,6 @@ jobs:
   status:
     docker:
       - image: 'cimg/base:stable'
-    requires:
-      - "heroku/deploy-via-git"
     steps:
       - run: echo "Sending status"
       - slack/notify:
@@ -43,3 +41,5 @@ workflows:
             branches:
               only: master
       - status
+          requires:
+            - name: "heroku/deploy-via-git"
