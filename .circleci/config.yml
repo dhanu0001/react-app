@@ -40,6 +40,6 @@ workflows:
           filters:
             branches:
               only: master
-      = status
+      - status
           requires:
             - heroku/deploy-via-git
