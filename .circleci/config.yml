@@ -22,7 +22,7 @@ jobs:
           working_directory: home/circleci/project/webapp/target/
           command: |
               mkdir /tmp/react-app
-              cp -r "/home/circleci/project/webapp/target/ /tmp/react-app
+              cp -r "/home/circleci/project/webapp/target/" /tmp/react-app
         
       - store_artifacts:
           path: /tmp/react-app
