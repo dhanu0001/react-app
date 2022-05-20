@@ -22,7 +22,7 @@ jobs:
           working_directory: ~/search-yc-top-companies
           command: |
               mkdir /tmp/react-app
-              cp -r "~/search-yc-top-companies" /tmp/react-app
+              cp -r "/search-yc-top-companies" /tmp/react-app
         
       - store_artifacts:
           path: /tmp/react-app
